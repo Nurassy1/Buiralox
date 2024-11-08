@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(bgg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 30px;
+}
+a {
+    text-decoration: none;
+}
+section img{
+    width: 400px;
+}
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+input {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    width: 300px;
+    font-size: 15px;
+    color: #fff;
+}
+input::placeholder {
+    color: white;
+}
+form img {
+    width: 100px;
+}
+.but {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.lol {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(56, 56, 255);
+    color: white;
+}
+.pol {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(23, 229, 57);
+}
+.mobtem {
+    display: none;
+}
+@media screen and (max-width:450px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url(bgmob.jpg);
+        background-size: cover;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 80px 0;
+        padding: 0;
+        width: 400px;
+    }
+    .mobtem {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .tema {
+        display: none;
+    }
+    form {
+        padding: 30px 20px;
+    }
+
+}
